@@ -3,14 +3,19 @@
     margin: 0;
 }
 
-
-
-.hover :hover {
-    width: 150px;
-    height: 100px;
-    background-color: rgb(0, 255, 13);  
-    color: white;
-    font-size: x-small;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.btn:hover {
+    background-color: green;
+    color: white;
+}
+.btn::before {
+    content: "Pasa por encima"
+}
+.btn:hover::before {
+    content: "¡Hecho!"
+}
